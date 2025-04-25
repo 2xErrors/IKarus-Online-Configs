@@ -1,12 +1,12 @@
 {
-  "name": "GrimSafe",
+  "name": "grim-safe",
   "date": "25.04.2025",
-  "time": "15:58",
+  "time": "18:57",
   "modules": [
     {
       "Name": "Velocity",
       "IsInConfig": true,
-      "Toggled": false,
+      "Toggled": true,
       "Key": 0,
       "Category": "COMBAT"
     },
@@ -41,8 +41,8 @@
     {
       "Name": "TickBase",
       "IsInConfig": true,
-      "Toggled": true,
-      "Key": 49,
+      "Toggled": false,
+      "Key": 0,
       "Category": "COMBAT"
     },
     {
@@ -130,6 +130,13 @@
       "Category": "COMBAT"
     },
     {
+      "Name": "NameTags",
+      "IsInConfig": true,
+      "Toggled": true,
+      "Key": 0,
+      "Category": "RENDER"
+    },
+    {
       "Name": "HUD",
       "IsInConfig": true,
       "Toggled": true,
@@ -151,6 +158,13 @@
       "Category": "RENDER"
     },
     {
+      "Name": "Trajectories",
+      "IsInConfig": true,
+      "Toggled": true,
+      "Key": 0,
+      "Category": "RENDER"
+    },
+    {
       "Name": "Sprint",
       "IsInConfig": true,
       "Toggled": false,
@@ -162,6 +176,20 @@
       "IsInConfig": true,
       "Toggled": false,
       "Key": 47,
+      "Category": "MOVEMENT"
+    },
+    {
+      "Name": "Blink",
+      "IsInConfig": true,
+      "Toggled": false,
+      "Key": 48,
+      "Category": "MOVEMENT"
+    },
+    {
+      "Name": "Fly",
+      "IsInConfig": true,
+      "Toggled": false,
+      "Key": 33,
       "Category": "MOVEMENT"
     },
     {
@@ -216,7 +244,7 @@
     {
       "Name": "Fixes",
       "IsInConfig": true,
-      "Toggled": true,
+      "Toggled": false,
       "Key": 37,
       "Category": "MISC"
     }
@@ -232,7 +260,7 @@
       "MinValue": 0.0,
       "MaxValue": 0.0,
       "DecimalPlaces": 0,
-      "SelectedOption": "TickZero",
+      "SelectedOption": "Intave",
       "Options": [
         "Basic",
         "Legit",
@@ -257,7 +285,7 @@
       "Green": 0,
       "Blue": 0,
       "Alpha": 0,
-      "Value": 34.0,
+      "Value": 0.0,
       "MinValue": 0.0,
       "MaxValue": 100.0,
       "DecimalPlaces": 0,
@@ -271,7 +299,7 @@
       "Green": 0,
       "Blue": 0,
       "Alpha": 0,
-      "Value": 20.0,
+      "Value": 0.0,
       "MinValue": 0.0,
       "MaxValue": 100.0,
       "DecimalPlaces": 0,
@@ -285,7 +313,7 @@
       "Green": 0,
       "Blue": 0,
       "Alpha": 0,
-      "Value": 0.6,
+      "Value": -1.0,
       "MinValue": -1.0,
       "MaxValue": 1.0,
       "DecimalPlaces": 2,
@@ -2999,7 +3027,9 @@
         "1.7",
         "Exhibition",
         "Slide",
-        "Butter"
+        "Butter",
+        "Popup",
+        "Soup"
       ],
       "Name": "Animation",
       "ParentName": "BlockAnimation",
@@ -3067,9 +3097,9 @@
       "Green": 0,
       "Blue": 0,
       "Alpha": 0,
-      "Value": 10.0,
+      "Value": 6.0,
       "MinValue": 3.0,
-      "MaxValue": 10.0,
+      "MaxValue": 6.0,
       "DecimalPlaces": 2,
       "Name": "MaxHitRange",
       "ParentName": "BackTrack",
@@ -3083,7 +3113,7 @@
       "Alpha": 0,
       "Value": 6666.0,
       "MinValue": 0.0,
-      "MaxValue": 50000.0,
+      "MaxValue": 30000.0,
       "DecimalPlaces": 0,
       "Name": "Time",
       "ParentName": "BackTrack",
@@ -3281,9 +3311,107 @@
       "MinValue": 0.0,
       "MaxValue": 0.0,
       "DecimalPlaces": 0,
-      "Name": "DisableOnWorld",
-      "ParentName": "BackTrack",
-      "id": 123
+      "SelectedOption": "Interpolation",
+      "Options": [
+        "None",
+        "Vanilla",
+        "Custom",
+        "Interpolation"
+      ],
+      "Name": "Mode",
+      "ParentName": "NameTags",
+      "id": 1
+    },
+    {
+      "Boolean": false,
+      "Red": 0,
+      "Green": 0,
+      "Blue": 0,
+      "Alpha": 0,
+      "Value": 0.0,
+      "MinValue": 0.0,
+      "MaxValue": 0.0,
+      "DecimalPlaces": 0,
+      "SelectedOption": "OtherRainbow",
+      "Options": [
+        "Rainbow",
+        "OtherRainbow",
+        "Custom",
+        "Team"
+      ],
+      "Name": "ColorMode",
+      "ParentName": "NameTags",
+      "id": 235246
+    },
+    {
+      "Boolean": false,
+      "Red": 255,
+      "Green": 255,
+      "Blue": 255,
+      "Alpha": 255,
+      "Value": 0.0,
+      "MinValue": 0.0,
+      "MaxValue": 0.0,
+      "DecimalPlaces": 0,
+      "Name": "CustomColor",
+      "ParentName": "NameTags",
+      "id": 21553
+    },
+    {
+      "Boolean": true,
+      "Red": 0,
+      "Green": 0,
+      "Blue": 0,
+      "Alpha": 0,
+      "Value": 0.0,
+      "MinValue": 0.0,
+      "MaxValue": 0.0,
+      "DecimalPlaces": 0,
+      "Name": "Background",
+      "ParentName": "NameTags",
+      "id": 2153
+    },
+    {
+      "Boolean": false,
+      "Red": 0,
+      "Green": 0,
+      "Blue": 0,
+      "Alpha": 0,
+      "Value": 1.5,
+      "MinValue": 0.0,
+      "MaxValue": 3.0,
+      "DecimalPlaces": 2,
+      "Name": "Scale",
+      "ParentName": "NameTags",
+      "id": 2
+    },
+    {
+      "Boolean": false,
+      "Red": 0,
+      "Green": 0,
+      "Blue": 0,
+      "Alpha": 0,
+      "Value": -0.13,
+      "MinValue": -3.0,
+      "MaxValue": 3.0,
+      "DecimalPlaces": 2,
+      "Name": "Height",
+      "ParentName": "NameTags",
+      "id": 4
+    },
+    {
+      "Boolean": true,
+      "Red": 0,
+      "Green": 0,
+      "Blue": 0,
+      "Alpha": 0,
+      "Value": 0.0,
+      "MinValue": 0.0,
+      "MaxValue": 0.0,
+      "DecimalPlaces": 0,
+      "Name": "Armor",
+      "ParentName": "NameTags",
+      "id": 3
     },
     {
       "Boolean": true,
@@ -3490,6 +3618,34 @@
     },
     {
       "Boolean": false,
+      "Red": 21,
+      "Green": 121,
+      "Blue": 230,
+      "Alpha": 255,
+      "Value": 0.0,
+      "MinValue": 0.0,
+      "MaxValue": 0.0,
+      "DecimalPlaces": 0,
+      "Name": "Color",
+      "ParentName": "Trajectories",
+      "id": 1
+    },
+    {
+      "Boolean": false,
+      "Red": 0,
+      "Green": 0,
+      "Blue": 0,
+      "Alpha": 0,
+      "Value": 6.0,
+      "MinValue": 1.0,
+      "MaxValue": 12.0,
+      "DecimalPlaces": 0,
+      "Name": "LineWidth",
+      "ParentName": "Trajectories",
+      "id": 2
+    },
+    {
+      "Boolean": false,
       "Red": 0,
       "Green": 0,
       "Blue": 0,
@@ -3628,6 +3784,200 @@
       "Name": "Strafe",
       "ParentName": "Speed",
       "id": 6
+    },
+    {
+      "Boolean": false,
+      "Red": 0,
+      "Green": 0,
+      "Blue": 0,
+      "Alpha": 0,
+      "Value": 0.0,
+      "MinValue": 0.0,
+      "MaxValue": 100.0,
+      "DecimalPlaces": 0,
+      "Name": "AutoDisable",
+      "ParentName": "Blink",
+      "id": 2
+    },
+    {
+      "Boolean": false,
+      "Red": 0,
+      "Green": 0,
+      "Blue": 0,
+      "Alpha": 0,
+      "Value": 100.0,
+      "MinValue": 0.0,
+      "MaxValue": 100.0,
+      "DecimalPlaces": 0,
+      "Name": "Pulse",
+      "ParentName": "Blink",
+      "id": 2
+    },
+    {
+      "Boolean": false,
+      "Red": 0,
+      "Green": 0,
+      "Blue": 0,
+      "Alpha": 0,
+      "Value": 0.0,
+      "MinValue": 0.0,
+      "MaxValue": 0.0,
+      "DecimalPlaces": 0,
+      "Name": "NoAura",
+      "ParentName": "Blink",
+      "id": 137248
+    },
+    {
+      "Boolean": true,
+      "Red": 0,
+      "Green": 0,
+      "Blue": 0,
+      "Alpha": 0,
+      "Value": 0.0,
+      "MinValue": 0.0,
+      "MaxValue": 0.0,
+      "DecimalPlaces": 0,
+      "Name": "FakePlayer",
+      "ParentName": "Blink",
+      "id": 23627
+    },
+    {
+      "Boolean": false,
+      "Red": 0,
+      "Green": 0,
+      "Blue": 0,
+      "Alpha": 0,
+      "Value": 0.0,
+      "MinValue": 0.0,
+      "MaxValue": 0.0,
+      "DecimalPlaces": 0,
+      "SelectedOption": "OnlyMovement",
+      "Options": [
+        "OnlyMovement",
+        "Players",
+        "C0F",
+        "All"
+      ],
+      "Name": "Mode",
+      "ParentName": "Blink",
+      "id": 1
+    },
+    {
+      "Boolean": false,
+      "Red": 0,
+      "Green": 0,
+      "Blue": 0,
+      "Alpha": 0,
+      "Value": 0.0,
+      "MinValue": 0.0,
+      "MaxValue": 0.0,
+      "DecimalPlaces": 0,
+      "Name": "DisableOnWorld",
+      "ParentName": "Blink",
+      "id": 123
+    },
+    {
+      "Boolean": false,
+      "Red": 0,
+      "Green": 0,
+      "Blue": 0,
+      "Alpha": 0,
+      "Value": 0.0,
+      "MinValue": 0.0,
+      "MaxValue": 0.0,
+      "DecimalPlaces": 0,
+      "SelectedOption": "Motion",
+      "Options": [
+        "Vanilla",
+        "Motion",
+        "Collide",
+        "AirJump",
+        "Verus",
+        "Verus2",
+        "SkycaveBad",
+        "Teleport",
+        "FurtherTeleport",
+        "Test",
+        "SilentACAbuse",
+        "Karhu",
+        "FoxAC",
+        "VulcanGlide",
+        "Grim",
+        "Packet"
+      ],
+      "Name": "Mode",
+      "ParentName": "Fly",
+      "id": 1
+    },
+    {
+      "Boolean": true,
+      "Red": 0,
+      "Green": 0,
+      "Blue": 0,
+      "Alpha": 0,
+      "Value": 0.0,
+      "MinValue": 0.0,
+      "MaxValue": 0.0,
+      "DecimalPlaces": 0,
+      "Name": "AutoJump",
+      "ParentName": "Fly",
+      "id": 2
+    },
+    {
+      "Boolean": true,
+      "Red": 0,
+      "Green": 0,
+      "Blue": 0,
+      "Alpha": 0,
+      "Value": 0.0,
+      "MinValue": 0.0,
+      "MaxValue": 0.0,
+      "DecimalPlaces": 0,
+      "Name": "OnGroundPacket",
+      "ParentName": "Fly",
+      "id": 5
+    },
+    {
+      "Boolean": false,
+      "Red": 0,
+      "Green": 0,
+      "Blue": 0,
+      "Alpha": 0,
+      "Value": 2.7,
+      "MinValue": 0.1,
+      "MaxValue": 9.0,
+      "DecimalPlaces": 1,
+      "Name": "Speed",
+      "ParentName": "Fly",
+      "id": 3
+    },
+    {
+      "Boolean": false,
+      "Red": 0,
+      "Green": 0,
+      "Blue": 0,
+      "Alpha": 0,
+      "Value": 2.7,
+      "MinValue": 0.1,
+      "MaxValue": 9.0,
+      "DecimalPlaces": 1,
+      "Name": "Speed",
+      "ParentName": "Fly",
+      "id": 4
+    },
+    {
+      "Boolean": false,
+      "Red": 0,
+      "Green": 0,
+      "Blue": 0,
+      "Alpha": 0,
+      "Value": 0.0,
+      "MinValue": 0.0,
+      "MaxValue": 0.0,
+      "DecimalPlaces": 0,
+      "Name": "DisableOnWorld",
+      "ParentName": "Fly",
+      "id": 123
     },
     {
       "Boolean": false,
@@ -3885,7 +4235,7 @@
       "Green": 0,
       "Blue": 0,
       "Alpha": 0,
-      "Value": 177.0,
+      "Value": 0.0,
       "MinValue": 0.0,
       "MaxValue": 1000.0,
       "DecimalPlaces": 0,
@@ -3899,7 +4249,7 @@
       "Green": 0,
       "Blue": 0,
       "Alpha": 0,
-      "Value": 106.0,
+      "Value": 0.0,
       "MinValue": 0.0,
       "MaxValue": 400.0,
       "DecimalPlaces": 0,
@@ -4078,7 +4428,7 @@
       "Green": 0,
       "Blue": 0,
       "Alpha": 0,
-      "Value": 180.0,
+      "Value": 92.0,
       "MinValue": 0.0,
       "MaxValue": 180.0,
       "DecimalPlaces": 0,
@@ -4171,7 +4521,7 @@
       "id": 6
     },
     {
-      "Boolean": true,
+      "Boolean": false,
       "Red": 0,
       "Green": 0,
       "Blue": 0,
@@ -4199,7 +4549,7 @@
       "id": 25
     },
     {
-      "Boolean": false,
+      "Boolean": true,
       "Red": 0,
       "Green": 0,
       "Blue": 0,
@@ -4213,7 +4563,7 @@
       "id": 21
     },
     {
-      "Boolean": true,
+      "Boolean": false,
       "Red": 0,
       "Green": 0,
       "Blue": 0,
@@ -4283,7 +4633,7 @@
       "id": 8
     },
     {
-      "Boolean": false,
+      "Boolean": true,
       "Red": 0,
       "Green": 0,
       "Blue": 0,
@@ -4297,7 +4647,7 @@
       "id": 13
     },
     {
-      "Boolean": false,
+      "Boolean": true,
       "Red": 0,
       "Green": 0,
       "Blue": 0,
