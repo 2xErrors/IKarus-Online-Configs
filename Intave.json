@@ -1,12 +1,12 @@
 {
   "name": "Intave",
-  "date": "25.04.2025",
-  "time": "17:13",
+  "date": "26.04.2025",
+  "time": "01:42",
   "modules": [
     {
       "Name": "Velocity",
       "IsInConfig": true,
-      "Toggled": false,
+      "Toggled": true,
       "Key": 0,
       "Category": "COMBAT"
     },
@@ -41,14 +41,14 @@
     {
       "Name": "TickBase",
       "IsInConfig": true,
-      "Toggled": true,
-      "Key": 0,
+      "Toggled": false,
+      "Key": 36,
       "Category": "COMBAT"
     },
     {
       "Name": "MoreKB",
       "IsInConfig": true,
-      "Toggled": false,
+      "Toggled": true,
       "Key": 0,
       "Category": "COMBAT"
     },
@@ -90,7 +90,7 @@
     {
       "Name": "ParticleTimer",
       "IsInConfig": true,
-      "Toggled": false,
+      "Toggled": true,
       "Key": 0,
       "Category": "RENDER"
     },
@@ -160,14 +160,14 @@
     {
       "Name": "Trajectories",
       "IsInConfig": true,
-      "Toggled": false,
+      "Toggled": true,
       "Key": 0,
       "Category": "RENDER"
     },
     {
       "Name": "Sprint",
       "IsInConfig": true,
-      "Toggled": false,
+      "Toggled": true,
       "Key": 0,
       "Category": "MOVEMENT"
     },
@@ -194,6 +194,13 @@
     },
     {
       "Name": "FastLadder",
+      "IsInConfig": true,
+      "Toggled": false,
+      "Key": 0,
+      "Category": "MOVEMENT"
+    },
+    {
+      "Name": "NoWeb",
       "IsInConfig": true,
       "Toggled": false,
       "Key": 0,
@@ -260,7 +267,7 @@
       "MinValue": 0.0,
       "MaxValue": 0.0,
       "DecimalPlaces": 0,
-      "SelectedOption": "TickZero",
+      "SelectedOption": "Jump",
       "Options": [
         "Basic",
         "Legit",
@@ -273,7 +280,9 @@
         "Test",
         "Grim",
         "BuzzReverse",
-        "TickZero"
+        "TickZero",
+        "Grim Flag",
+        "Jump"
       ],
       "Name": "Mode",
       "ParentName": "Velocity",
@@ -579,7 +588,7 @@
       "Green": 0,
       "Blue": 0,
       "Alpha": 0,
-      "Value": 57.0,
+      "Value": 0.0,
       "MinValue": 0.0,
       "MaxValue": 400.0,
       "DecimalPlaces": 0,
@@ -593,7 +602,7 @@
       "Green": 0,
       "Blue": 0,
       "Alpha": 0,
-      "Value": 75.0,
+      "Value": 53.0,
       "MinValue": 0.0,
       "MaxValue": 400.0,
       "DecimalPlaces": 0,
@@ -1403,7 +1412,7 @@
       "Green": 0,
       "Blue": 0,
       "Alpha": 0,
-      "Value": 3.3,
+      "Value": 3.0,
       "MinValue": 3.0,
       "MaxValue": 6.0,
       "DecimalPlaces": 2,
@@ -1501,7 +1510,7 @@
       "Green": 0,
       "Blue": 0,
       "Alpha": 0,
-      "Value": 355.0,
+      "Value": 88.0,
       "MinValue": 0.0,
       "MaxValue": 1000.0,
       "DecimalPlaces": 0,
@@ -1706,7 +1715,7 @@
       "id": 90
     },
     {
-      "Boolean": true,
+      "Boolean": false,
       "Red": 0,
       "Green": 0,
       "Blue": 0,
@@ -1846,7 +1855,7 @@
       "id": 43
     },
     {
-      "Boolean": false,
+      "Boolean": true,
       "Red": 0,
       "Green": 0,
       "Blue": 0,
@@ -1902,7 +1911,7 @@
       "id": 46
     },
     {
-      "Boolean": true,
+      "Boolean": false,
       "Red": 0,
       "Green": 0,
       "Blue": 0,
@@ -2288,7 +2297,7 @@
       "Green": 0,
       "Blue": 0,
       "Alpha": 0,
-      "Value": 4.3,
+      "Value": 20.0,
       "MinValue": 0.1,
       "MaxValue": 20.0,
       "DecimalPlaces": 2,
@@ -3668,7 +3677,7 @@
       "MinValue": 0.0,
       "MaxValue": 0.0,
       "DecimalPlaces": 0,
-      "SelectedOption": "IntaveRage",
+      "SelectedOption": "LegitHop",
       "Options": [
         "VOnGround",
         "VBhop",
@@ -3805,7 +3814,7 @@
       "Green": 0,
       "Blue": 0,
       "Alpha": 0,
-      "Value": 0.0,
+      "Value": 7.0,
       "MinValue": 0.0,
       "MaxValue": 100.0,
       "DecimalPlaces": 0,
@@ -3814,7 +3823,7 @@
       "id": 2
     },
     {
-      "Boolean": false,
+      "Boolean": true,
       "Red": 0,
       "Green": 0,
       "Blue": 0,
@@ -3828,7 +3837,7 @@
       "id": 137248
     },
     {
-      "Boolean": true,
+      "Boolean": false,
       "Red": 0,
       "Green": 0,
       "Blue": 0,
@@ -3851,7 +3860,7 @@
       "MinValue": 0.0,
       "MaxValue": 0.0,
       "DecimalPlaces": 0,
-      "SelectedOption": "OnlyMovement",
+      "SelectedOption": "All",
       "Options": [
         "OnlyMovement",
         "Players",
@@ -4006,6 +4015,26 @@
       "Name": "StopOnEnd",
       "ParentName": "FastLadder",
       "id": 2
+    },
+    {
+      "Boolean": false,
+      "Red": 0,
+      "Green": 0,
+      "Blue": 0,
+      "Alpha": 0,
+      "Value": 0.0,
+      "MinValue": 0.0,
+      "MaxValue": 0.0,
+      "DecimalPlaces": 0,
+      "SelectedOption": "Ignore",
+      "Options": [
+        "Intave",
+        "Ignore",
+        "IntaveTest"
+      ],
+      "Name": "Mode",
+      "ParentName": "NoWeb",
+      "id": 1
     },
     {
       "Boolean": false,
@@ -4207,7 +4236,7 @@
       "Green": 0,
       "Blue": 0,
       "Alpha": 0,
-      "Value": 155.0,
+      "Value": 111.0,
       "MinValue": 0.0,
       "MaxValue": 1000.0,
       "DecimalPlaces": 0,
@@ -4235,7 +4264,7 @@
       "Green": 0,
       "Blue": 0,
       "Alpha": 0,
-      "Value": 177.0,
+      "Value": 77.0,
       "MinValue": 0.0,
       "MaxValue": 1000.0,
       "DecimalPlaces": 0,
@@ -4249,7 +4278,7 @@
       "Green": 0,
       "Blue": 0,
       "Alpha": 0,
-      "Value": 106.0,
+      "Value": 44.0,
       "MinValue": 0.0,
       "MaxValue": 400.0,
       "DecimalPlaces": 0,
@@ -4549,7 +4578,7 @@
       "id": 25
     },
     {
-      "Boolean": true,
+      "Boolean": false,
       "Red": 0,
       "Green": 0,
       "Blue": 0,
@@ -4563,7 +4592,7 @@
       "id": 21
     },
     {
-      "Boolean": false,
+      "Boolean": true,
       "Red": 0,
       "Green": 0,
       "Blue": 0,
@@ -4633,7 +4662,7 @@
       "id": 8
     },
     {
-      "Boolean": true,
+      "Boolean": false,
       "Red": 0,
       "Green": 0,
       "Blue": 0,
@@ -4647,7 +4676,7 @@
       "id": 13
     },
     {
-      "Boolean": true,
+      "Boolean": false,
       "Red": 0,
       "Green": 0,
       "Blue": 0,
@@ -4941,7 +4970,7 @@
       "Green": 0,
       "Blue": 0,
       "Alpha": 0,
-      "Value": 5.0,
+      "Value": 2.0,
       "MinValue": 1.0,
       "MaxValue": 10.0,
       "DecimalPlaces": 0,
@@ -4955,7 +4984,7 @@
       "Green": 0,
       "Blue": 0,
       "Alpha": 0,
-      "Value": 5.0,
+      "Value": 8.0,
       "MinValue": 1.0,
       "MaxValue": 15.0,
       "DecimalPlaces": 0,
@@ -4969,7 +4998,7 @@
       "Green": 0,
       "Blue": 0,
       "Alpha": 0,
-      "Value": 5.0,
+      "Value": 8.0,
       "MinValue": 1.0,
       "MaxValue": 15.0,
       "DecimalPlaces": 0,
