@@ -3,22 +3,22 @@
         "name": "intave",
         "link": {"value": "https://raw.githubusercontent.com/2xErrors/IKarus-Online-Configs/refs/heads/main/Intave.json"},
         "id": {"value": 1}
-    }
+    },
     {
         "name": "grim",
         "link": {"value": "https://raw.githubusercontent.com/2xErrors/IKarus-Online-Configs/refs/heads/main/Grim.json"},
         "id": {"value": 2}
-    }
+    },
     {
         "name": "grim-safe",
         "link": {"value": "https://raw.githubusercontent.com/2xErrors/IKarus-Online-Configs/refs/heads/main/GrimSafe.json"},
         "id": {"value": 3}
-    }
+    },
     {
         "name": "blocksmc",
         "link": {"value": "https://raw.githubusercontent.com/2xErrors/IKarus-Online-Configs/refs/heads/main/BlocksMC.json"},
         "id": {"value": 4}
-    }
+    },
     {
         "name": "bmcfun",
         "link": {"value": "https://raw.githubusercontent.com/2xErrors/IKarus-Online-Configs/refs/heads/main/BMCFun.json"},
