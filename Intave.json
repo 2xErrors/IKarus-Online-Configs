@@ -1,7 +1,7 @@
 {
   "name": "Intave",
   "date": "26.04.2025",
-  "time": "01:42",
+  "time": "14:23",
   "modules": [
     {
       "Name": "Velocity",
@@ -251,7 +251,7 @@
     {
       "Name": "Fixes",
       "IsInConfig": true,
-      "Toggled": true,
+      "Toggled": false,
       "Key": 37,
       "Category": "MISC"
     }
@@ -3031,7 +3031,7 @@
       "MinValue": 0.0,
       "MaxValue": 0.0,
       "DecimalPlaces": 0,
-      "SelectedOption": "1.7",
+      "SelectedOption": "Exhibition",
       "Options": [
         "1.7",
         "Exhibition",
@@ -3050,7 +3050,7 @@
       "Green": 0,
       "Blue": 0,
       "Alpha": 0,
-      "Value": 0.19,
+      "Value": 0.1,
       "MinValue": -0.5,
       "MaxValue": 1.5,
       "DecimalPlaces": 2,
@@ -3078,7 +3078,7 @@
       "Green": 0,
       "Blue": 0,
       "Alpha": 0,
-      "Value": 0.2,
+      "Value": 1.0,
       "MinValue": 0.1,
       "MaxValue": 3.0,
       "DecimalPlaces": 1,
@@ -4264,7 +4264,7 @@
       "Green": 0,
       "Blue": 0,
       "Alpha": 0,
-      "Value": 77.0,
+      "Value": 111.0,
       "MinValue": 0.0,
       "MaxValue": 1000.0,
       "DecimalPlaces": 0,
@@ -4278,7 +4278,7 @@
       "Green": 0,
       "Blue": 0,
       "Alpha": 0,
-      "Value": 44.0,
+      "Value": 80.0,
       "MinValue": 0.0,
       "MaxValue": 400.0,
       "DecimalPlaces": 0,
